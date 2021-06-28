@@ -1,17 +1,25 @@
-# iduate-bank-card Package
-Creating package to check if bank card numbers are valid via Luhn Algorithm
+## Table of contents
+* [Introduction](#introduction)
+* [Languages](#languages)
+* [Files](#files)
+* [Installation](#installation)
+* [Use](#use)
 
-# Language
-Python
+# Introduction
+Creating package to check if bank card numbers are valid via Luhn Algorithm using object oriented programming and uploading to pypi test and prod
+
+# Languages
+* Python
+* Bash
 
 # Files
-bank_card.tar.gz
+Setup.py
+
+bank_card.tar.gz - zip file containing the following:
 
 BankCard.py - contains methods and attributes for a given bank card
 * attributes - number, checksum and isValid
 * methods - luhn_isValid, luhn_checksum
-
-Setup.py
 
 # Installation
 pip install iduate-bank-card
