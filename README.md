@@ -15,7 +15,7 @@ Creating package to check if bank card numbers are valid via Luhn Algorithm usin
 # Files
 * Setup.py
 
-* pipy_upload_terminal_commands.rtd
+* pipy_upload_terminal_commands.rtf
 ```
 python3 setup.py sdist bdist_wheel
 pip install twine
