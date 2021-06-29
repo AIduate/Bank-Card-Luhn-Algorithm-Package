@@ -13,6 +13,7 @@ class BankCard():
         self.number = num
         self.checksum = self.luhn_checksum()
         self.isValid = self.luhn_isValid()
+        self.reason = self.isValid_reason()
     
     def luhn_checksum(self):
     
@@ -56,5 +57,28 @@ class BankCard():
             boolean: True/False
     
         """
-        isValid = (self.checksum % 10 == 0)
-        return isValid
+        if len(str(self.number)) < 8:
+            Valid = False
+        
+        else:
+            Valid = (self.checksum % 10 == 0)
+            
+        return Valid
+    
+    def isValid_reason(self):
+    
+        """Method to give user reason as to why card is valid or invalid.
+        
+        Args: 
+            None
+        Returns: 
+            string: reason
+    
+        """
+        if len(str(self.number)) < 8:
+            reason = "Number does not meet minimum requirements"
+        else:
+            reason = "checksum"
+        
+        self.isValid_reason = reason
+        return reason
